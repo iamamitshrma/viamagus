@@ -23,9 +23,11 @@ const Video = () => {
     <div className='video--video_container'>
         <ReactPlayer url={video} width="100%" height="100vh"/>
     </div>
+    <div className="outer">
             <div onClick={changeVideo} className='video--circle'>
                 <img src={"//img.youtube.com/vi/" + thumbnail + "/0.jpg"} alt="" />
             </div>
+    </div>
     </>
   )
 }

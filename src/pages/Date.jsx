@@ -27,7 +27,7 @@ const DatePage = () => {
     <div className='date--container'>
       <div className="center">
         <label htmlFor="birthdaytime">Date From:</label>
-        <input onChange={(e)=>setFromDate(e.target.value)} type="datetime-local" id="birthdaytime" name="time" value={fromDate}></input>
+        <input onChange={(e)=>setFromDate(e.target.value)} defaultValue={new Date()} type="datetime-local" id="birthdaytime" name="time" value={fromDate}></input>
 
         <label htmlFor="duration">Duration(in hours)</label>
         <input onChange={durationHandler} type="number" name="duration" id="duration" value={duration} placeholder="Enter duration in hours"/>
